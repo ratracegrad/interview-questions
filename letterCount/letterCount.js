@@ -2,22 +2,28 @@
  *                                                             *
  *                       CodePrep.io                           *
  *                                                             *
- *   Function:  palindrome(str)                                *
+ *   Function:  letterCount(str)                               *
  *   Input:    1 string parameter                              *
- *   Output:   boolean                                         *
+ *   Output:   object                                          *
  *                                                             *
  *   Output expectations:                                      *
- *   var myTest = palindrome('civic');                         *
- *   console.log(myTest);  // true                             *
+ *   var myTest = letterCount('hello world');                  *
+ *   console.log(myTest);                                      *
+ *   // {   h: 1,
+ *          e: 1,
+*           l: 3,
+*           o: 2,
+*           w: 1,
+*           r: 1,
+*           d: 1
+*      }
  *                                                             *
- *   A palindrome is a word, phrase or number which            *
- *   reads the same backward or forward.                       *
  *                                                             *
- *   Write the code for the palindrome function that           *
- *   accepts a string input and then returns true or           *
- *   false if that string is a palindrome. Allowances          *
- *   must be made for capital letters, punctuation and         *
- *   word dividers.                                            *
+ *   Write the code for the letterCount function that          *
+ *   accepts a string input and then returns an object         *
+ *   with each character in the string as a key and the        *
+ *   value is the number of times that character appears       *
+ *   in the string.                                            *
  *                                                             *
  **************************************************************/
 
