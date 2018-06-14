@@ -21,11 +21,21 @@
  *                                                             *
  **************************************************************/
 
-let palindrome = function(str) {
+let letterCount = function(str) {
     /* YOUR CODE GOES HERE */
+    let obj = {};
+    str.forEach((char) => {
+        if (obj[char]) {
+            obj[char] = obj[char] + 1;
+        } else {
+            obj[char] = 1;
+        }
+    });
+
+    return obj;
 
 };
 
 module.exports = {
-    palindrome: palindrome
+    letterCount: letterCount
 };
