@@ -21,7 +21,7 @@
  *                                                             *
  **************************************************************/
 
-let letterCount = function(str) {
+module.exports = function letterCount(str) {
     /* YOUR CODE GOES HERE */
     let obj = {};
     str.forEach((char) => {
@@ -34,8 +34,4 @@ let letterCount = function(str) {
 
     return obj;
 
-};
-
-module.exports = {
-    letterCount: letterCount
 };
