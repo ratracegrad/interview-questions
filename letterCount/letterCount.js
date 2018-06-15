@@ -29,6 +29,8 @@
 
 module.exports = function letterCount(str) {
     /* YOUR CODE GOES HERE */
+    str = str.replace(/[^a-zA-Z]/gi, "").split("");
+
     let obj = {};
     str.forEach((char) => {
         if (obj[char]) {
