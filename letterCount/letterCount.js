@@ -28,7 +28,7 @@
  **************************************************************/
 
 module.exports = function letterCount(str) {
-    /* YOUR CODE GOES HERE */
+    /* small change */
     let obj = {};
     str.forEach((char) => {
         if (obj[char]) {
