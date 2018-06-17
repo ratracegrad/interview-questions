@@ -23,5 +23,6 @@
 
 module.exports= function palindrome(str) {
     /* YOUR CODE GOES HERE */
+    /* test */
 
 };
