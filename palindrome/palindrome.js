@@ -21,6 +21,8 @@
  *                                                             *
  **************************************************************/
 
-module.exports= function palindrome(str) {
+function palindrome(str) {
     return str.toLowerCase() === str.split('').reverse().join('').toLowerCase();
-};
+}
+
+module.exports = palindrome;
