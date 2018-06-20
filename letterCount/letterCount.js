@@ -28,6 +28,6 @@
  **************************************************************/
 
 module.exports = function letterCount(str) {
-    /* YOUR CODE GOES HERE */
+    return { "oops": 1};
     
 };
