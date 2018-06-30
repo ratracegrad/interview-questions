@@ -11,12 +11,12 @@
  *   console.log(myTest);                                      *
  *   // {   h: 1,
  *          e: 1,
-*           l: 3,
-*           o: 2,
-*           w: 1,
-*           r: 1,
-*           d: 1
-*      }
+ *           l: 3,
+ *           o: 2,
+ *           w: 1,
+ *           r: 1,
+ *           d: 1
+ *      }
  *                                                             *
  *                                                             *
  *   Write the code for the letterCount function that          *
@@ -28,6 +28,17 @@
  **************************************************************/
 
 module.exports = function letterCount(str) {
-    /* YOUR CODE GOES HERE */
-    
+	/* YOUR CODE GOES HERE */
+	const stringAsArray = str.split("");
+	const outputObject = {};
+
+	stringAsArray.forEach(letter => {
+		if (!outputObject[letter]) {
+			outputObject[letter] = 1;
+			return;
+		}
+		outputObject[letter]++;
+	});
+
+	return outputObject;
 };
