@@ -31,14 +31,14 @@ module.exports = function letterCount(str) {
 	/* YOUR CODE GOES HERE */
 	const stringAsArray = str.split("");
 	const outputObject = {};
-
 	stringAsArray.forEach(letter => {
-		if (!outputObject[letter]) {
-			outputObject[letter] = 1;
-			return;
+		if (/[a-z]/i.test(letter)) {
+			if (!outputObject[letter]) {
+				outputObject[letter] = 1;
+				return;
+			}
+			outputObject[letter]++;
 		}
-		outputObject[letter]++;
 	});
-
 	return outputObject;
 };
