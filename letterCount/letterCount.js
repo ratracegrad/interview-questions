@@ -29,5 +29,15 @@
 
 module.exports = function letterCount(str) {
     /* YOUR CODE GOES HERE */
-    
+    var output = {};
+    str = str.replace(/\W+/g, ''); // remove any whitespace so we're just dealing with letters
+    for (var i = 0; i < str.length; i++) {
+        var char = str.charAt(i).toLowerCase(); // standardize the char
+        if (output[char] === undefined || output[char] === null) {
+            output[char] = 1;
+        } else {
+            output[char]++;
+        }
+    }
+    return output
 };
