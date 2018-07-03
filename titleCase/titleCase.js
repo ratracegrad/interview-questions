@@ -24,4 +24,26 @@
 module.exports= function titleCase(str) {
     /* YOUR CODE GOES HERE */
 
-};
+    function titleCase(str) {
+        //Place the string in lower case first
+        string = string.toLowerCase();
+        // str = "I love to swim on a hot day".toLowerCase();
+        // str = "I love to swim on a hot day";
+
+        // Split the string into an array
+        string = string.split(' ');
+        // str = ["i", "love", "to", "swim", "on", "a", "hot", "day"];
+
+        //For loop to go through each time to capitalize the first letter
+        for (var i = 0; i < str.length; i++) {
+            string[i] = string[i].charAt(0).toUpperCase() + string[i].slice(1);
+
+            titleCase();
+
+        };
+    }
+
+    return str.join(' '); // ["I", "Love", "To", "Swim", "On", "A", "Hot", "Day"].join(' ')
+}
+
+titleCase("I love to swim on a hot day");

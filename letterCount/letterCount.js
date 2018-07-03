@@ -29,5 +29,17 @@
 
 module.exports = function letterCount(str) {
     /* YOUR CODE GOES HERE */
+
+    letterCounter = str => {
+        return str.split('').reduce((total, letter) => {
+            total[letter] ? total[letter]++ : total[letter] = 1;
+        return total;
+    }, {});
+    };
+    console.log(myTest);
+    letterCounter("hello world");
+
+
     
 };
+
