@@ -24,6 +24,18 @@
  **************************************************************/
 
 module.exports= function longestWord(str) {
-    /* YOUR CODE GOES HERE */
-
+    let sanitizeString = (str)=>{
+        let arr = str.split(' ');
+        arr = arr.filter((item)=>{
+            return /[A-z]+/g.test(item);
+        });
+        return arr;
+    }
+    return (str)=>{
+        let arr = sanitizeString(str);
+        arr.reduce((prev, curr, index, array)=> {
+            return (prev.length > curr.length) ? prev : curr;
+        });
+        return arr;
+    }
 };
