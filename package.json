@@ -1,0 +1,14 @@
+{
+  "name": "interview-questions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kprenesti/interview-questions.git",
+  "author": "<krista.prenesti@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}

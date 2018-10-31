@@ -28,6 +28,17 @@
  **************************************************************/
 
 module.exports = function letterCount(str) {
-    /* YOUR CODE GOES HERE */
-    
+    let str1 = str.split('');
+    let obj = {};
+    str1 = str1.filter((item)=>{
+        return /([A-z])+/g.test(item);
+    })
+    str1.forEach((item, index, array)=>{
+        if (!obj.hasOwnProperty(item)){
+            obj[item] = 1;
+        } else {
+            obj[item] += 1
+        }
+    });
+    return obj;  
 };
