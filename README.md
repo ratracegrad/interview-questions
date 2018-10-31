@@ -1,4 +1,4 @@
-# Interview Questions
+touch# Interview Questions
 
 Anybody that wants to interview for a job in tech is faced
 with completing what is known as either a "coding challenge" or a "whiteboard exercise". This repo was created to help you prepare for these events so you are well prepared for you interview.
@@ -51,4 +51,6 @@ We definitely are interested in any challenges you might have experienced when i
 - What If I Find A Bug In The Code?
 
 Please submit an issue and we will be glad to fix the problem.
+
+Lady Jenn, you rock!
 
