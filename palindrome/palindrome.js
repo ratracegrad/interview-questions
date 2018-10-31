@@ -22,6 +22,10 @@
  **************************************************************/
 
 module.exports= function palindrome(str) {
-    /* YOUR CODE GOES HERE */
-
+    let sanitizeString = (str) =>{ 
+        return str.toLowerCase().split(' ').filter((character)=> /[A-z]+/g.test(character));
+    }
+    let arr = sanitizeString(str);
+    return (arr === arr.reverse());
+    
 };
