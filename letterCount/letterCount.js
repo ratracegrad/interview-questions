@@ -29,5 +29,24 @@
 
 module.exports = function letterCount(str) {
     /* YOUR CODE GOES HERE */
-    
+
+    //Remove whitespaces, digits and special characters, then split the string into an array
+    const strArr = str.replace(/[\s\W\d]/g,'').split('');
+    // Empty object to store the number of each letter as key value pairs
+    let strObj = new Object({});
+
+    /*Foreach arrow function: pushes every letter into if function. 
+    If letter exists in object (strObj.hasOwnProperty), then count; else: add the letter as a new key value pair */
+    strArr.forEach(letter =>{
+    if(strObj.hasOwnProperty(letter)){
+    strObj[letter] += 1;
+    }
+    else{
+    strObj[letter] = 1;
+    }
+    });
+    return strObj;
 };
+
+var myTest = letterCount('hello world');
+console.log(myTest);
