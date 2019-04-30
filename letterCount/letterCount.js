@@ -29,5 +29,10 @@
 
 module.exports = function letterCount(str) {
     /* YOUR CODE GOES HERE */
+obj = {};
+str.split('').forEach((el,ind)=>{
+obj[el]=str.match(new RegExp(el,'g')).length
+})
+return obj
     
 };
