@@ -25,5 +25,5 @@
 
 module.exports= function longestWord(str) {
     /* YOUR CODE GOES HERE */
-
+if(str.length){return str.split(' ').sort((one,two)=>one.length<two.length? 1: -1)[0]}
 };
