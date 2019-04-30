@@ -23,5 +23,5 @@
 
 module.exports= function palindrome(str) {
     /* YOUR CODE GOES HERE */
-
+return str == str.split('').reverse().join('')
 };
