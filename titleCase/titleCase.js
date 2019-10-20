@@ -20,8 +20,12 @@
  *   in which every word in that string is title case.         *
  *                                                             *
  **************************************************************/
+ module.exports= function titleCase(str) {
+// /* YOUR CODE GOES HERE */
+    
+ return str
+   .split(" ")
+   .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+   .join(" ");
 
-module.exports= function titleCase(str) {
-    /* YOUR CODE GOES HERE */
-
-};
+ };
