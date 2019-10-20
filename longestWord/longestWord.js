@@ -23,7 +23,7 @@
  *                                                             *
  **************************************************************/
 
-module.exports= function longestWord(str) {
-    /* YOUR CODE GOES HERE */
-
+module.exports = function longestWord(str) {
+  /* YOUR CODE GOES HERE */
+  return str.split(" ").sort((a, b) => (b.length > a.length ? 1 : -1))[0];
 };

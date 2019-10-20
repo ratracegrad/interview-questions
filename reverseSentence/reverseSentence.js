@@ -23,6 +23,15 @@
  **************************************************************/
 
 module.exports= function reverseSentence(str) {
-    /* YOUR CODE GOES HERE */
+/* YOUR CODE GOES HERE */
+    return str
+      .split(" ")
+      .map(word =>
+        word
+          .split("")
+          .reverse()
+          .join("")
+      )
+      .join(" ");
 
 };

@@ -31,7 +31,10 @@
  *                                                             *
  **************************************************************/
 
-module.exports= function temperatureConverter(str) {
-    /* YOUR CODE GOES HERE */
+module.exports= function temperatureConverter(deg, type = 'f') {
+/* YOUR CODE GOES HERE */
+    return type === "f"
+      ? ((deg - 32) * (5 / 9)).toFixed(1)
+      : (deg * (9 / 5) + 32).toFixed(1);
 
 };

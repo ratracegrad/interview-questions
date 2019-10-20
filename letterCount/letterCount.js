@@ -29,5 +29,12 @@
 
 module.exports = function letterCount(str) {
     /* YOUR CODE GOES HERE */
-    
+    const letterCount = {};
+    str.split('').forEach(letter => {
+       letter !== ' ' && (letterCount[letter] ? letterCount[letter]++ : letterCount[letter] = 1)
+    });
+    return letterCount;
 };
+
+
+
