@@ -22,6 +22,10 @@
  **************************************************************/
 
 module.exports= function palindrome(str) {
-    /* YOUR CODE GOES HERE */
-
+/* YOUR CODE GOES HERE */
+    /* This will work just fine for small strings, but for big strings, it would be stupid inefficient. 
+    It would be better to start at each end of the string, and compare the letters as you move in toward the middle.
+    All well, this should work.
+    */
+    return str === str.split('').reverse().join('');
 };
